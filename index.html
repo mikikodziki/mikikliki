@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dominika Saczyńska - Senior Product Designer</title>
+  <meta name="description" content="Dominika Saczyńska, Senior Product Designer at designsystem.team. Design systems, tokens and product craft." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
+
+  <header class="topbar wrap">
+    <a class="logo" href="#top" aria-label="Dominika Saczyńska, home">ds<span>.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work"><span class="nr">n°001</span> Work</a>
+      <a href="#craft"><span class="nr">n°002</span> Craft</a>
+      <a href="#career"><span class="nr">n°003</span> Career</a>
+      <a href="#contact"><span class="nr">n°004</span> Contact</a>
+    </nav>
+    <button class="mode" type="button" aria-label="Toggle light / dark mode">
+      <span class="mode-opt" data-opt="light">Light</span><span class="mode-opt" data-opt="dark">Dark</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO: framed bento ============ -->
+    <section class="wrap hero-frame-wrap">
+      <div class="hero-frame">
+        <div class="tile tile--identity">
+          <p class="greeting">Cześć, I'm Dominika</p>
+          <h1>Senior Product Designer building <em>design systems</em> that teams actually ship with.</h1>
+          <p class="status"><span class="dot" aria-hidden="true"></span><span class="shimmer-text">Currently at designsystem.team · open to select collaborations</span></p>
+          <div class="tile-actions">
+            <a class="btn btn-primary" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#work">View work</a>
+            <!-- TODO: add LinkedIn URL -->
+            <a class="icon-link" href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <!-- HERO IMAGE SLOT: replace .portrait-fill with <img src="img/dominika.jpg" alt="Dominika Saczyńska"> -->
+          <div class="tile tile--portrait">
+            <div class="portrait-fill" aria-hidden="true"><span>DS</span></div>
+          </div>
+          <a class="tile tile--link" href="#craft">
+            <h2>About</h2>
+            <p>I care about the details nobody notices until they're wrong: naming, states, spacing, the token behind every colour.</p>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-side">
+          <div class="tile tile--tokens" aria-label="Design token preview">
+            <p class="mono label">tokens.json</p>
+            <ul class="token-list">
+              <li><i style="background:var(--accent)"></i><code>--color-accent</code></li>
+              <li><i style="background:var(--positive)"></i><code>--color-positive</code></li>
+              <li><i style="background:var(--ink)"></i><code>--color-text-primary</code></li>
+              <li><i style="background:var(--card);box-shadow:inset 0 0 0 1px var(--hairline)"></i><code>--color-surface-card</code></li>
+            </ul>
+            <p class="token-note">primitives <span>→</span> semantic</p>
+          </div>
+          <a class="tile tile--link" href="#work">
+            <h2>Work</h2>
+            <p>Component libraries, tokenization, theming and the products built on top of them.</p>
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-strip">
+          <span class="chip">Design systems</span>
+          <span class="chip">Tokenization</span>
+          <span class="chip">Figma libraries</span>
+          <span class="chip">Modes &amp; theming</span>
+          <span class="chip">Documentation</span>
+          <span class="chip">Product craft</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <!-- TODO: replace placeholder projects with real case studies (title, tags, cover image, link). -->
+    <section class="wrap section" id="work">
+      <div class="section-head">
+        <p class="nr">n°001 · Work</p>
+        <h2>Selected work</h2>
+        <p class="lead">Design systems and the products that run on them, from primitives to production screens.</p>
+      </div>
+
+      <div class="work-grid">
+        <a class="tile work-card" href="#">
+          <div class="media media--library" aria-hidden="true">
+            <div class="m-btns"><b></b><b class="s"></b><b class="o"></b><b class="g"></b></div>
+            <div class="m-input"></div><div class="m-input short"></div>
+            <div class="m-toggle"><span></span></div>
+          </div>
+          <h3>Component library for a fintech platform</h3>
+          <p class="tags"><span>Design System</span><span>Figma</span><span>Storybook</span></p>
+        </a>
+
+        <a class="tile work-card" href="#">
+          <div class="media media--tokens" aria-hidden="true">
+            <div class="sw" style="--c:#ff5d3a"></div><div class="sw" style="--c:#1d9e6a"></div><div class="sw" style="--c:#161a22"></div>
+            <div class="sw" style="--c:#f0f5fa"></div><div class="sw" style="--c:#a1a1aa"></div><div class="sw" style="--c:#6d6d73"></div>
+          </div>
+          <h3>Token architecture &amp; rebrand remap</h3>
+          <p class="tags"><span>Tokenization</span><span>Theming</span><span>Rebrand</span></p>
+        </a>
+
+        <a class="tile work-card" href="#">
+          <div class="media media--dash" aria-hidden="true">
+            <div class="d-side"></div>
+            <div class="d-main"><div class="d-kpi"></div><div class="d-kpi"></div><div class="d-kpi"></div><div class="d-chart"></div></div>
+          </div>
+          <h3>Health dashboard with light &amp; dark modes</h3>
+          <p class="tags"><span>UI/UX</span><span>Modes</span><span>Data Viz</span></p>
+        </a>
+
+        <a class="tile work-card" href="#">
+          <div class="media media--docs" aria-hidden="true">
+            <div class="doc-nav"><i></i><i></i><i class="on"></i><i></i><i></i></div>
+            <div class="doc-body"><b></b><p></p><p class="short"></p><div class="doc-do"><span class="do"></span><span class="dont"></span></div></div>
+          </div>
+          <h3>Documentation site for a SaaS design system</h3>
+          <p class="tags"><span>Documentation</span><span>Guidelines</span></p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CRAFT ============ -->
+    <section class="wrap section" id="craft">
+      <div class="craft tile">
+        <div class="craft-lead">
+          <p class="nr">n°002 · Craft</p>
+          <h2>What I deliver</h2>
+          <p class="lead">A system your team can navigate on day one, in Figma and in code.</p>
+        </div>
+        <dl class="craft-list">
+          <div><dt><span class="mono">01</span> Foundations</dt><dd>Audits, design tokens and accessibility baked in from the first primitive.</dd></div>
+          <div><dt><span class="mono">02</span> Component libraries</dt><dd>Guidelines, atoms, molecules, organisms: every variant, size and state accounted for.</dd></div>
+          <div><dt><span class="mono">03</span> Modes &amp; theming</dt><dd>Light, dark and brand themes, localisation-ready. Built into foundations, not bolted on.</dd></div>
+          <div><dt><span class="mono">04</span> Documentation</dt><dd>Usage rules, do &amp; don't, consistent naming. If it isn't documented, it isn't done.</dd></div>
+          <div><dt><span class="mono">05</span> Product craft</dt><dd>Screens that use the system well, with the polish that makes a product feel considered.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CAREER ============ -->
+    <!-- TODO: fill in previous roles. -->
+    <section class="wrap section" id="career">
+      <div class="section-head">
+        <p class="nr">n°003 · Career</p>
+        <h2>Career path</h2>
+      </div>
+
+      <div class="career">
+        <a class="tile career-now" href="https://designsystem.team" target="_blank" rel="noopener">
+          <p class="mono label">Now</p>
+          <h3>Senior Product Designer</h3>
+          <p class="org">designsystem.team</p>
+          <p>A senior-only studio building AI-first design systems for startups and enterprises. I design the systems end to end: tokens, components, modes and documentation.</p>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+        <ol class="tile career-list">
+          <li><span class="role">Senior Product Designer</span><span class="org">designsystem.team</span><span class="year">Now</span></li>
+          <li><span class="role">Product Designer</span><span class="org">Company name</span><span class="year">20XX - 20XX</span></li>
+          <li><span class="role">UX/UI Designer</span><span class="org">Company name</span><span class="year">20XX - 20XX</span></li>
+          <li><span class="role">Graphic Designer</span><span class="org">Company name</span><span class="year">20XX - 20XX</span></li>
+        </ol>
+      </div>
+
+      <div class="team tile">
+        <div>
+          <p class="mono label">The team</p>
+          <p class="team-copy">I work alongside <a href="https://iglewski.eu" target="_blank" rel="noopener">Witek Iglewski</a> and the rest of <a href="https://designsystem.team" target="_blank" rel="noopener">designsystem.team</a>, a small senior crew of designers and engineers.</p>
+        </div>
+        <ul class="avatars" aria-label="Team members">
+          <li title="Witek, Chief Design Officer">W</li>
+          <li class="me" title="Dominika, Senior Product Designer">D</li>
+          <li title="Kasia, Senior Product Designer">K</li>
+          <li title="Dawid, Chief Technology Officer">D</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="wrap section" id="contact">
+      <div class="contact tile">
+        <p class="nr">n°004 · Contact</p>
+        <h2>Let's build a system that <em>scales</em>.</h2>
+        <p class="lead">Open to design system projects, product work and select collaborations.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:dominika.saczynska@gmail.com">dominika.saczynska@gmail.com</a>
+        <p class="loc mono">Poland · working worldwide</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© Dominika Saczyńska <span class="year-now">2026</span></span>
+    <span>Senior Product Designer · <a href="https://designsystem.team" target="_blank" rel="noopener">designsystem.team</a></span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
